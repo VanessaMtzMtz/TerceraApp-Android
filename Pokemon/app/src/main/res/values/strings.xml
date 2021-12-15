@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pokemon</string>
+    <string name="bttnReturn">Regresar</string>
+    <string name="txtName">Nombre</string>
+    <string name="txtWeight">Peso</string>
+    <string name="txtHeight">Altura</string>
 </resources>
