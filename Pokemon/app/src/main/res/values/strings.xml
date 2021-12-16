@@ -4,4 +4,5 @@
     <string name="txtName">Nombre</string>
     <string name="txtWeight">Peso</string>
     <string name="txtHeight">Altura</string>
+    <string name="tvListElem">Título</string>
 </resources>

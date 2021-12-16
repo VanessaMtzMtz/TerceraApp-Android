@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:animateLayoutChanges="true"
+    android:backgroundTint="@color/purple_200"
     android:elevation="6dp"
     app:cardCornerRadius="10dp"
     app:cardUseCompatPadding="true">
@@ -13,6 +14,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -46,10 +48,11 @@
                     android:id="@+id/tvTitle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:fontFamily="casual"
+                    android:fontFamily="@font/ketchum"
                     android:gravity="center_vertical"
-                    android:text="TextView"
-                    android:textSize="20sp" />
+                    android:textColor="@color/purple_700"
+                    android:textSize="48sp"
+                    tools:text="@string/tvListElem" />
             </LinearLayout>
         </RelativeLayout>
     </LinearLayout>

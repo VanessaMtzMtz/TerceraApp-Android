@@ -2,19 +2,19 @@ package com.example.pokemon.model
 
 import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.Path
 import retrofit2.http.Query
 import retrofit2.http.Url
 
 interface PokeApi {
-    //https://pokeapi.co/api/v2/pokemon?limit=151
 
     @GET
     fun getPokemons(
         @Url url: String?
-    ):Call<List<Pokmon>>
+    ):Call<Pokmon>
 
-    @GET("api/v2/pokemon/")
+    @GET("api/v2/pokemon/{id}")
     fun getPokemonDetail(
-        @Query("id") id:String?
+        @Path("id") id:String?
     ):Call<PokemonDetail>
 }
