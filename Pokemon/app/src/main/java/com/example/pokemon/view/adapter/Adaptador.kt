@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.pokemon.databinding.ListElementBinding
+import com.example.pokemon.model.Pokemon
 import com.example.pokemon.model.Pokmon
 
-class Adaptador(context: Context, pokemons: List<Pokmon>, onItemListener: OnItemListener): RecyclerView.Adapter<Adaptador.ViewHolder>() {
+class Adaptador(context: Context, pokemons: List<Pokemon>, onItemListener: OnItemListener): RecyclerView.Adapter<Adaptador.ViewHolder>() {
 
     private val pokemons = pokemons
     private val mOnItemListener = onItemListener
@@ -35,9 +36,7 @@ class Adaptador(context: Context, pokemons: List<Pokmon>, onItemListener: OnItem
 
     class ViewHolder(binding: ListElementBinding, onItemListener: OnItemListener): RecyclerView.ViewHolder(binding.root), View.OnClickListener {
 
-        private val ivThumbnail = binding.ivThumbnail
         private val tvTitle = binding.tvTitle
-        private val context = binding.root.context
         private val onItemListener = onItemListener
         private lateinit var pokemon: Pokmon
 
@@ -49,9 +48,9 @@ class Adaptador(context: Context, pokemons: List<Pokmon>, onItemListener: OnItem
             onItemListener.onItemClick(pokemon)
         }
 
-        fun bindData(item: Pokmon){
+        fun bindData(item: Pokemon){
             tvTitle.text = item.name
-            pokemon = item
+            //pokemon = item
         }
 
     }

@@ -8,7 +8,7 @@ import retrofit2.http.Url
 
 interface PokeApi {
 
-    @GET
+    @GET("api/v2/pokemon?limit=151")
     fun getPokemons(
         @Url url: String?
     ):Call<Pokmon>

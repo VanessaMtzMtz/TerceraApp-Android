@@ -7,11 +7,10 @@ class Pokmon {
     var id: String? = null
 
     @SerializedName("results")
-    var results: Results? = null
-
+    var results: List<Pokemon>? = null
 }
 
-class Results{
+class Pokemon{
     @SerializedName ("name")
     var name: String? = null
 }
